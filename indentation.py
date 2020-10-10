@@ -51,10 +51,13 @@ Do konzole vypište nejprve docstring vaší funkce a potom zavolejte funkci sam
 """
 
 def i(num):
-    for i in range(1,10):
+    """
+    This function compares two numbers
+    """
+    for i in range(0,10):
         if i < num:
-            print(i + "je mensi nez" + num)
+            print("%d" %i + " je mensi nez %d" %num)
         else:
-            print(i + "je vetsi nez" + num)
+            print("%d" %i + " je vetsi nez %d" %num)
 print(i.__doc__)
 i(5)
